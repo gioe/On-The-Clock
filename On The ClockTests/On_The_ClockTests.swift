@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import On_The_Clock
+@testable import OnTheClock
 
 class On_The_ClockTests: XCTestCase {
     

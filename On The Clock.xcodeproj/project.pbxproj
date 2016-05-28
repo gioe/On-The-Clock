@@ -10,12 +10,14 @@
 		1ADE36591CFA0AEE00532B46 /* On_The_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36581CFA0AEE00532B46 /* On_The_ClockTests.swift */; };
 		1ADE36641CFA0AEE00532B46 /* On_The_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36631CFA0AEE00532B46 /* On_The_ClockUITests.swift */; };
 		1ADE36761CFA146100532B46 /* PaymentGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36751CFA146100532B46 /* PaymentGeneratorTests.swift */; };
-		1ADE367D1CFA158A00532B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36771CFA158A00532B46 /* AppDelegate.swift */; };
-		1ADE367E1CFA158A00532B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE36781CFA158A00532B46 /* Assets.xcassets */; };
-		1ADE367F1CFA158A00532B46 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE36791CFA158A00532B46 /* Base.lproj */; };
-		1ADE36801CFA158A00532B46 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE367A1CFA158A00532B46 /* Info.plist */; };
-		1ADE36811CFA158A00532B46 /* PaymentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE367B1CFA158A00532B46 /* PaymentGenerator.swift */; };
-		1ADE36821CFA158A00532B46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE367C1CFA158A00532B46 /* ViewController.swift */; };
+		1ADE36891CFA169400532B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36831CFA169400532B46 /* AppDelegate.swift */; };
+		1ADE368A1CFA169400532B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE36841CFA169400532B46 /* Assets.xcassets */; };
+		1ADE368B1CFA169400532B46 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE36851CFA169400532B46 /* Base.lproj */; };
+		1ADE368C1CFA169400532B46 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE36861CFA169400532B46 /* Info.plist */; };
+		1ADE368D1CFA169400532B46 /* PaymentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36871CFA169400532B46 /* PaymentGenerator.swift */; };
+		1ADE368E1CFA169400532B46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36881CFA169400532B46 /* ViewController.swift */; };
+		1ADE36901CFA243D00532B46 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE368F1CFA243D00532B46 /* StopWatch.swift */; };
+		1ADE36921CFA26B900532B46 /* StopWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36911CFA26B900532B46 /* StopWatchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +46,14 @@
 		1ADE36631CFA0AEE00532B46 /* On_The_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = On_The_ClockUITests.swift; sourceTree = "<group>"; };
 		1ADE36651CFA0AEE00532B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ADE36751CFA146100532B46 /* PaymentGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentGeneratorTests.swift; sourceTree = "<group>"; };
-		1ADE36771CFA158A00532B46 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = OnTheClock/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		1ADE36781CFA158A00532B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OnTheClock/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		1ADE36791CFA158A00532B46 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = OnTheClock/Base.lproj; sourceTree = SOURCE_ROOT; };
-		1ADE367A1CFA158A00532B46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OnTheClock/Info.plist; sourceTree = SOURCE_ROOT; };
-		1ADE367B1CFA158A00532B46 /* PaymentGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentGenerator.swift; path = OnTheClock/PaymentGenerator.swift; sourceTree = SOURCE_ROOT; };
-		1ADE367C1CFA158A00532B46 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = OnTheClock/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		1ADE36831CFA169400532B46 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ADE36841CFA169400532B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ADE36851CFA169400532B46 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		1ADE36861CFA169400532B46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADE36871CFA169400532B46 /* PaymentGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentGenerator.swift; sourceTree = "<group>"; };
+		1ADE36881CFA169400532B46 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ADE368F1CFA243D00532B46 /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		1ADE36911CFA26B900532B46 /* StopWatchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,7 @@
 		1ADE36371CFA0AEE00532B46 = {
 			isa = PBXGroup;
 			children = (
-				1ADE36421CFA0AEE00532B46 /* OnTheClock */,
+				1ADE36421CFA0AEE00532B46 /* On The Clock */,
 				1ADE36571CFA0AEE00532B46 /* On The ClockTests */,
 				1ADE36621CFA0AEE00532B46 /* On The ClockUITests */,
 				1ADE36411CFA0AEE00532B46 /* Products */,
@@ -97,17 +101,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1ADE36421CFA0AEE00532B46 /* OnTheClock */ = {
+		1ADE36421CFA0AEE00532B46 /* On The Clock */ = {
 			isa = PBXGroup;
 			children = (
-				1ADE36771CFA158A00532B46 /* AppDelegate.swift */,
-				1ADE36781CFA158A00532B46 /* Assets.xcassets */,
-				1ADE36791CFA158A00532B46 /* Base.lproj */,
-				1ADE367A1CFA158A00532B46 /* Info.plist */,
-				1ADE367B1CFA158A00532B46 /* PaymentGenerator.swift */,
-				1ADE367C1CFA158A00532B46 /* ViewController.swift */,
+				1ADE36831CFA169400532B46 /* AppDelegate.swift */,
+				1ADE36841CFA169400532B46 /* Assets.xcassets */,
+				1ADE36851CFA169400532B46 /* Base.lproj */,
+				1ADE36861CFA169400532B46 /* Info.plist */,
+				1ADE36871CFA169400532B46 /* PaymentGenerator.swift */,
+				1ADE368F1CFA243D00532B46 /* StopWatch.swift */,
+				1ADE36881CFA169400532B46 /* ViewController.swift */,
 			);
-			name = OnTheClock;
 			path = "On The Clock";
 			sourceTree = "<group>";
 		};
@@ -117,6 +121,7 @@
 				1ADE36581CFA0AEE00532B46 /* On_The_ClockTests.swift */,
 				1ADE365A1CFA0AEE00532B46 /* Info.plist */,
 				1ADE36751CFA146100532B46 /* PaymentGeneratorTests.swift */,
+				1ADE36911CFA26B900532B46 /* StopWatchTests.swift */,
 			);
 			path = "On The ClockTests";
 			sourceTree = "<group>";
@@ -234,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADE367F1CFA158A00532B46 /* Base.lproj in Resources */,
-				1ADE367E1CFA158A00532B46 /* Assets.xcassets in Resources */,
-				1ADE36801CFA158A00532B46 /* Info.plist in Resources */,
+				1ADE368B1CFA169400532B46 /* Base.lproj in Resources */,
+				1ADE368A1CFA169400532B46 /* Assets.xcassets in Resources */,
+				1ADE368C1CFA169400532B46 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADE36821CFA158A00532B46 /* ViewController.swift in Sources */,
-				1ADE36811CFA158A00532B46 /* PaymentGenerator.swift in Sources */,
-				1ADE367D1CFA158A00532B46 /* AppDelegate.swift in Sources */,
+				1ADE368E1CFA169400532B46 /* ViewController.swift in Sources */,
+				1ADE368D1CFA169400532B46 /* PaymentGenerator.swift in Sources */,
+				1ADE36891CFA169400532B46 /* AppDelegate.swift in Sources */,
+				1ADE36901CFA243D00532B46 /* StopWatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ADE36761CFA146100532B46 /* PaymentGeneratorTests.swift in Sources */,
+				1ADE36921CFA26B900532B46 /* StopWatchTests.swift in Sources */,
 				1ADE36591CFA0AEE00532B46 /* On_The_ClockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +400,7 @@
 				INFOPLIST_FILE = "On The Clock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MWG.On-The-Clock";
+				PRODUCT_MODULE_NAME = OnTheClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -406,6 +414,7 @@
 				INFOPLIST_FILE = "On The Clock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MWG.On-The-Clock";
+				PRODUCT_MODULE_NAME = OnTheClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
