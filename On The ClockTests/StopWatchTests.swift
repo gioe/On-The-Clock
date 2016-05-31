@@ -38,4 +38,18 @@ class StopWatchTests: XCTestCase {
         stopWatch.startTimer()
         XCTAssertNotNil(stopWatch.timer)
     }
+    
+    func testSecondsConversion(){
+        let stopWatch = StopWatch()
+        stopWatch.count = 10
+        XCTAssertEqual(stopWatch.generateFormattedSecondsFromCount(), ":10")
+    }
+    
+    func testResetTimer(){
+        let stopWatch = StopWatch()
+        stopWatch.count = 0
+        stopWatch.resetTimer()
+        XCTAssertEqual(stopWatch.count, 0)
+    }
+
 }
