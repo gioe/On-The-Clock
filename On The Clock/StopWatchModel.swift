@@ -9,7 +9,7 @@
 import Foundation
 import ReactiveCocoa
 
-class StopWatch : NSObject {
+class StopWatchModel : NSObject {
     var count = 0
     var timer = NSTimer()
     

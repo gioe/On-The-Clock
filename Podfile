@@ -5,6 +5,7 @@ target 'On The Clock' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+    pod 'Swinject', '~> 1.1'
     pod 'ReactiveCocoa', '~> 4.1'
 
   target 'On The ClockTests' do

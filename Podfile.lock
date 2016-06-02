@@ -11,14 +11,17 @@ PODS:
     - ReactiveCocoa/Core
     - Result (~> 2.0)
   - Result (2.0.0)
+  - Swinject (1.1.2)
 
 DEPENDENCIES:
   - ReactiveCocoa (~> 4.1)
+  - Swinject (~> 1.1)
 
 SPEC CHECKSUMS:
   ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
   Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
 
-PODFILE CHECKSUM: 64d7d9777f30024500093811931665ed17db67af
+PODFILE CHECKSUM: 48eda41e2b16ff7e2904fbe37096e894c798f262
 
 COCOAPODS: 1.0.0

@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2A79461CFCA5E500713C18 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2A79451CFCA5E500713C18 /* ClockView.swift */; };
 		1A2A79481CFCA5FB00713C18 /* HourlyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2A79471CFCA5FB00713C18 /* HourlyTableView.swift */; };
-		1AA1F6851CFDDF0D005A1277 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F6841CFDDF0D005A1277 /* IntroView.swift */; };
-		1AA1F68D1CFDE001005A1277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1F68C1CFDE001005A1277 /* Main.storyboard */; };
-		1AA1F68F1CFDE597005A1277 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F68E1CFDE597005A1277 /* Job.swift */; };
-		1AA1F6911CFDE65C005A1277 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F6901CFDE65C005A1277 /* JobTableViewCell.swift */; };
+		1A4FCB011D00D1A2002A9CBC /* JobDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FCAFF1D00D1A2002A9CBC /* JobDataModel.xcdatamodeld */; };
+		1AA1F6851CFDDF0D005A1277 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F6841CFDDF0D005A1277 /* IntroViewController.swift */; };
+		1AA1F68F1CFDE597005A1277 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F68E1CFDE597005A1277 /* JobModel.swift */; };
+		1AA1F6931CFDFB86005A1277 /* JobTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F6921CFDFB86005A1277 /* JobTableViewCellViewModel.swift */; };
+		1AA1F6981CFE0D21005A1277 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1F6971CFE0D21005A1277 /* JobTableViewCell.xib */; };
+		1AA1F69C1CFE140D005A1277 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F69B1CFE140D005A1277 /* JobTableViewCell.swift */; };
+		1ADAD1311CFF385C007DF28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1F68C1CFDE001005A1277 /* Main.storyboard */; };
+		1ADAD1331CFF553F007DF28C /* AddJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAD1321CFF553F007DF28C /* AddJobViewController.swift */; };
 		1ADE36591CFA0AEE00532B46 /* On_The_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36581CFA0AEE00532B46 /* On_The_ClockTests.swift */; };
 		1ADE36641CFA0AEE00532B46 /* On_The_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36631CFA0AEE00532B46 /* On_The_ClockUITests.swift */; };
 		1ADE36761CFA146100532B46 /* PaymentGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36751CFA146100532B46 /* PaymentGeneratorTests.swift */; };
 		1ADE36891CFA169400532B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36831CFA169400532B46 /* AppDelegate.swift */; };
 		1ADE368A1CFA169400532B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE36841CFA169400532B46 /* Assets.xcassets */; };
 		1ADE368C1CFA169400532B46 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE36861CFA169400532B46 /* Info.plist */; };
-		1ADE368D1CFA169400532B46 /* PaymentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36871CFA169400532B46 /* PaymentGenerator.swift */; };
-		1ADE36901CFA243D00532B46 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE368F1CFA243D00532B46 /* StopWatch.swift */; };
+		1ADE368D1CFA169400532B46 /* PaymentGeneratorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36871CFA169400532B46 /* PaymentGeneratorModel.swift */; };
+		1ADE36901CFA243D00532B46 /* StopWatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE368F1CFA243D00532B46 /* StopWatchModel.swift */; };
 		1ADE36921CFA26B900532B46 /* StopWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36911CFA26B900532B46 /* StopWatchTests.swift */; };
 		51D352D07C2F190321C940F0 /* Pods_On_The_ClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AD318657DF9816D29D7C41 /* Pods_On_The_ClockTests.framework */; };
 		6DB2F10CD2AE25BA4FB88824 /* Pods_On_The_ClockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE850828DBC78846C9A7398 /* Pods_On_The_ClockUITests.framework */; };
@@ -60,12 +63,15 @@
 /* Begin PBXFileReference section */
 		0541AC2217671D6453BF2C78 /* Pods-On The Clock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On The Clock.release.xcconfig"; path = "Pods/Target Support Files/Pods-On The Clock/Pods-On The Clock.release.xcconfig"; sourceTree = "<group>"; };
 		0C9D83957D7495B548C7D83D /* Pods-On The ClockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On The ClockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-On The ClockUITests/Pods-On The ClockUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1A2A79451CFCA5E500713C18 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		1A2A79471CFCA5FB00713C18 /* HourlyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyTableView.swift; sourceTree = "<group>"; };
-		1AA1F6841CFDDF0D005A1277 /* IntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroView.swift; path = ../IntroView.swift; sourceTree = "<group>"; };
-		1AA1F68C1CFDE001005A1277 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		1AA1F68E1CFDE597005A1277 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
-		1AA1F6901CFDE65C005A1277 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		1A4FCB001D00D1A2002A9CBC /* JobDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1AA1F6841CFDDF0D005A1277 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = ../IntroViewController.swift; sourceTree = "<group>"; };
+		1AA1F68C1CFDE001005A1277 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		1AA1F68E1CFDE597005A1277 /* JobModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		1AA1F6921CFDFB86005A1277 /* JobTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		1AA1F6971CFE0D21005A1277 /* JobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		1AA1F69B1CFE140D005A1277 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		1ADAD1321CFF553F007DF28C /* AddJobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJobViewController.swift; sourceTree = "<group>"; };
 		1ADE36401CFA0AEE00532B46 /* On The Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On The Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADE36541CFA0AEE00532B46 /* On The ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On The ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADE36581CFA0AEE00532B46 /* On_The_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = On_The_ClockTests.swift; sourceTree = "<group>"; };
@@ -77,8 +83,8 @@
 		1ADE36831CFA169400532B46 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ADE36841CFA169400532B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ADE36861CFA169400532B46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1ADE36871CFA169400532B46 /* PaymentGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentGenerator.swift; sourceTree = "<group>"; };
-		1ADE368F1CFA243D00532B46 /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		1ADE36871CFA169400532B46 /* PaymentGeneratorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentGeneratorModel.swift; sourceTree = "<group>"; };
+		1ADE368F1CFA243D00532B46 /* StopWatchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchModel.swift; sourceTree = "<group>"; };
 		1ADE36911CFA26B900532B46 /* StopWatchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchTests.swift; sourceTree = "<group>"; };
 		1D237D1B1641A59227A0E1C9 /* Pods-On The ClockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On The ClockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-On The ClockUITests/Pods-On The ClockUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BE850828DBC78846C9A7398 /* Pods_On_The_ClockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_On_The_ClockUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,9 +139,10 @@
 		1A2A79421CFCA38600713C18 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1ADE368F1CFA243D00532B46 /* StopWatch.swift */,
-				1ADE36871CFA169400532B46 /* PaymentGenerator.swift */,
-				1AA1F68E1CFDE597005A1277 /* Job.swift */,
+				1ADE368F1CFA243D00532B46 /* StopWatchModel.swift */,
+				1ADE36871CFA169400532B46 /* PaymentGeneratorModel.swift */,
+				1AA1F68E1CFDE597005A1277 /* JobModel.swift */,
+				1A4FCAFF1D00D1A2002A9CBC /* JobDataModel.xcdatamodeld */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -143,10 +150,10 @@
 		1A2A79431CFCA38E00713C18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A2A79451CFCA5E500713C18 /* ClockView.swift */,
+				1AA1F6961CFE0A23005A1277 /* View Controllers */,
 				1A2A79471CFCA5FB00713C18 /* HourlyTableView.swift */,
-				1AA1F6841CFDDF0D005A1277 /* IntroView.swift */,
-				1AA1F6901CFDE65C005A1277 /* JobTableViewCell.swift */,
+				1AA1F69B1CFE140D005A1277 /* JobTableViewCell.swift */,
+				1AA1F6971CFE0D21005A1277 /* JobTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -154,14 +161,23 @@
 		1A2A79441CFCA39A00713C18 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1AA1F6921CFDFB86005A1277 /* JobTableViewCellViewModel.swift */,
 			);
 			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		1AA1F6961CFE0A23005A1277 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1F6841CFDDF0D005A1277 /* IntroViewController.swift */,
+				1ADAD1321CFF553F007DF28C /* AddJobViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		1ADE36371CFA0AEE00532B46 = {
 			isa = PBXGroup;
 			children = (
-				1AA1F68C1CFDE001005A1277 /* Main.storyboard */,
 				1ADE36421CFA0AEE00532B46 /* On The Clock */,
 				1ADE36571CFA0AEE00532B46 /* On The ClockTests */,
 				1ADE36621CFA0AEE00532B46 /* On The ClockUITests */,
@@ -184,6 +200,7 @@
 		1ADE36421CFA0AEE00532B46 /* On The Clock */ = {
 			isa = PBXGroup;
 			children = (
+				1AA1F68C1CFDE001005A1277 /* Main.storyboard */,
 				1A2A79441CFCA39A00713C18 /* ViewModels */,
 				1A2A79431CFCA38E00713C18 /* Views */,
 				1A2A79421CFCA38600713C18 /* Models */,
@@ -337,9 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AA1F68D1CFDE001005A1277 /* Main.storyboard in Resources */,
+				1ADAD1311CFF385C007DF28C /* Main.storyboard in Resources */,
 				1ADE368A1CFA169400532B46 /* Assets.xcassets in Resources */,
 				1ADE368C1CFA169400532B46 /* Info.plist in Resources */,
+				1AA1F6981CFE0D21005A1277 /* JobTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,14 +505,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADE368D1CFA169400532B46 /* PaymentGenerator.swift in Sources */,
+				1ADE368D1CFA169400532B46 /* PaymentGeneratorModel.swift in Sources */,
+				1ADAD1331CFF553F007DF28C /* AddJobViewController.swift in Sources */,
 				1ADE36891CFA169400532B46 /* AppDelegate.swift in Sources */,
-				1ADE36901CFA243D00532B46 /* StopWatch.swift in Sources */,
-				1A2A79461CFCA5E500713C18 /* ClockView.swift in Sources */,
+				1AA1F6931CFDFB86005A1277 /* JobTableViewCellViewModel.swift in Sources */,
+				1ADE36901CFA243D00532B46 /* StopWatchModel.swift in Sources */,
+				1A4FCB011D00D1A2002A9CBC /* JobDataModel.xcdatamodeld in Sources */,
 				1A2A79481CFCA5FB00713C18 /* HourlyTableView.swift in Sources */,
-				1AA1F68F1CFDE597005A1277 /* Job.swift in Sources */,
-				1AA1F6851CFDDF0D005A1277 /* IntroView.swift in Sources */,
-				1AA1F6911CFDE65C005A1277 /* JobTableViewCell.swift in Sources */,
+				1AA1F69C1CFE140D005A1277 /* JobTableViewCell.swift in Sources */,
+				1AA1F68F1CFDE597005A1277 /* JobModel.swift in Sources */,
+				1AA1F6851CFDDF0D005A1277 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +758,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A4FCAFF1D00D1A2002A9CBC /* JobDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A4FCB001D00D1A2002A9CBC /* JobDataModel.xcdatamodel */,
+			);
+			currentVersion = 1A4FCB001D00D1A2002A9CBC /* JobDataModel.xcdatamodel */;
+			path = JobDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1ADE36381CFA0AEE00532B46 /* Project object */;
 }

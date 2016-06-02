@@ -6,36 +6,29 @@
 //  Copyright © 2016 Matt Gioe. All rights reserved.
 //
 
-import Foundation
 import UIKit
-
-protocol JobCellProtocol {
-    var name: String { get }
-    var image: UIImage { get }
-    var date : String { get }
-    
-}
 
 class JobTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var companyNameLabel: UILabel!
     @IBOutlet private weak var lastJobDate: UILabel!
-    @IBOutlet private weak var companyLogo: UIImage!
+    @IBOutlet weak var logo: UIImageView!
     
-    private var delegate: JobCellProtocol?
-    
+    public func setupCell(withJob job:JobModel){
+        companyNameLabel.text = job.companyName
+        logo.image = job.companyLogo
+        lastJobDate.text = job.lastSubmissionDate
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
-    
-    func setupCell(withDelegate delegate: JobCellProtocol){
-        self.delegate = delegate
-        
-        companyNameLabel.text = delegate.name
-        companyLogo.image = delegate.image
-        lastJobDate.text = delegate.date
 
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
-    
+
 }
-

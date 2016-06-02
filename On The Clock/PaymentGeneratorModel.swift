@@ -9,7 +9,7 @@
 import Foundation
 import ReactiveCocoa
 
-class PaymentGenerator : NSObject {
+class PaymentGeneratorModel : NSObject {
     var hourlyRateInput : Float = 0.0
     var hourlyRateInDollas : String = ""
     var timePassed : Float = 0.0
