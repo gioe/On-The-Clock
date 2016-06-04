@@ -14,10 +14,10 @@ class JobTableViewCell: UITableViewCell {
     @IBOutlet private weak var lastJobDate: UILabel!
     @IBOutlet weak var logo: UIImageView!
     
-    public func setupCell(withJob job:JobModel){
+    internal func setupCell(withJob job:JobModel){
         companyNameLabel.text = job.companyName
         logo.image = job.companyLogo
-        lastJobDate.text = job.lastSubmissionDate
+//        lastJobDate.text = job.lastSubmissionDate
     }
 
     override func awakeFromNib() {

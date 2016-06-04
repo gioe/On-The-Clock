@@ -13,11 +13,14 @@ class JobModel : NSObject {
     
     let companyName : String
     var companyLogo : UIImage?
-    var lastSubmissionDate : String?
-    var hourlyRate : Float?
+    var lastSubmissionDate : NSDate?
+    var hourlyRate : String
     
-    init (companyName: String){
+    init (companyName: String, hourlyRate: String, companyLogo: UIImage?, lastSubmissionDate: NSDate?){
         self.companyName = companyName
+        self.companyLogo = companyLogo
+        self.hourlyRate = hourlyRate
+        self.lastSubmissionDate = lastSubmissionDate
     }
     
 }

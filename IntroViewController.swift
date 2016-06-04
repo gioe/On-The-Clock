@@ -12,16 +12,23 @@ import ReactiveCocoa
 class IntroViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var jobTable: UITableView!
-    private var allJobs = [JobModel]()
+    private var allJobs = [JobModel]?()
+    let jobManager = Jobs()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNibsForCells()
         registerDelegates()
+    }
     
-        if allJobs.count == 0{
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        allJobs = jobManager.fetchAllJobs()
+        if allJobs!.count == 0{
             self.jobTable.hidden = true
         }
+        self.jobTable.reloadData()
+        
     }
     
     func registerNibsForCells(){
@@ -37,12 +44,12 @@ class IntroViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allJobs.count
+        return allJobs!.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {        
         let cell = tableView.dequeueReusableCellWithIdentifier("customCell", forIndexPath: indexPath) as! JobTableViewCell
-        let job = allJobs[indexPath.row]
+        let job = allJobs![indexPath.row]
         cell.setupCell(withJob: job)
         return cell
         

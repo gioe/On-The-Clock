@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1A2A79481CFCA5FB00713C18 /* HourlyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2A79471CFCA5FB00713C18 /* HourlyTableView.swift */; };
-		1A4FCB011D00D1A2002A9CBC /* JobDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FCAFF1D00D1A2002A9CBC /* JobDataModel.xcdatamodeld */; };
+		1A4FCB031D0113B8002A9CBC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4FCB021D0113B8002A9CBC /* CoreData.framework */; };
+		1A4FCB431D011953002A9CBC /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A4FCB411D011953002A9CBC /* DataModel.xcdatamodeld */; };
 		1AA1F6851CFDDF0D005A1277 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F6841CFDDF0D005A1277 /* IntroViewController.swift */; };
 		1AA1F68F1CFDE597005A1277 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F68E1CFDE597005A1277 /* JobModel.swift */; };
 		1AA1F6931CFDFB86005A1277 /* JobTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F6921CFDFB86005A1277 /* JobTableViewCellViewModel.swift */; };
 		1AA1F6981CFE0D21005A1277 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1F6971CFE0D21005A1277 /* JobTableViewCell.xib */; };
 		1AA1F69C1CFE140D005A1277 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA1F69B1CFE140D005A1277 /* JobTableViewCell.swift */; };
+		1AC79A031D032ECC008C921C /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC79A021D032ECC008C921C /* Jobs.swift */; };
 		1ADAD1311CFF385C007DF28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1F68C1CFDE001005A1277 /* Main.storyboard */; };
 		1ADAD1331CFF553F007DF28C /* AddJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAD1321CFF553F007DF28C /* AddJobViewController.swift */; };
 		1ADE36591CFA0AEE00532B46 /* On_The_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE36581CFA0AEE00532B46 /* On_The_ClockTests.swift */; };
@@ -64,13 +66,15 @@
 		0541AC2217671D6453BF2C78 /* Pods-On The Clock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On The Clock.release.xcconfig"; path = "Pods/Target Support Files/Pods-On The Clock/Pods-On The Clock.release.xcconfig"; sourceTree = "<group>"; };
 		0C9D83957D7495B548C7D83D /* Pods-On The ClockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On The ClockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-On The ClockUITests/Pods-On The ClockUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A2A79471CFCA5FB00713C18 /* HourlyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyTableView.swift; sourceTree = "<group>"; };
-		1A4FCB001D00D1A2002A9CBC /* JobDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JobDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1A4FCB021D0113B8002A9CBC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A4FCB421D011953002A9CBC /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		1AA1F6841CFDDF0D005A1277 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = ../IntroViewController.swift; sourceTree = "<group>"; };
 		1AA1F68C1CFDE001005A1277 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		1AA1F68E1CFDE597005A1277 /* JobModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		1AA1F6921CFDFB86005A1277 /* JobTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		1AA1F6971CFE0D21005A1277 /* JobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
 		1AA1F69B1CFE140D005A1277 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		1AC79A021D032ECC008C921C /* Jobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jobs.swift; sourceTree = "<group>"; };
 		1ADAD1321CFF553F007DF28C /* AddJobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJobViewController.swift; sourceTree = "<group>"; };
 		1ADE36401CFA0AEE00532B46 /* On The Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On The Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADE36541CFA0AEE00532B46 /* On The ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "On The ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4FCB031D0113B8002A9CBC /* CoreData.framework in Frameworks */,
 				82D4B0D282DADE7D223A8ACE /* Pods_On_The_Clock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +147,6 @@
 				1ADE368F1CFA243D00532B46 /* StopWatchModel.swift */,
 				1ADE36871CFA169400532B46 /* PaymentGeneratorModel.swift */,
 				1AA1F68E1CFDE597005A1277 /* JobModel.swift */,
-				1A4FCAFF1D00D1A2002A9CBC /* JobDataModel.xcdatamodeld */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -175,6 +179,14 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		1AC79A011D032EBA008C921C /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1AC79A021D032ECC008C921C /* Jobs.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		1ADE36371CFA0AEE00532B46 = {
 			isa = PBXGroup;
 			children = (
@@ -200,13 +212,15 @@
 		1ADE36421CFA0AEE00532B46 /* On The Clock */ = {
 			isa = PBXGroup;
 			children = (
-				1AA1F68C1CFDE001005A1277 /* Main.storyboard */,
-				1A2A79441CFCA39A00713C18 /* ViewModels */,
-				1A2A79431CFCA38E00713C18 /* Views */,
 				1A2A79421CFCA38600713C18 /* Models */,
+				1AC79A011D032EBA008C921C /* Objects */,
+				1A2A79431CFCA38E00713C18 /* Views */,
+				1A2A79441CFCA39A00713C18 /* ViewModels */,
 				1ADE36831CFA169400532B46 /* AppDelegate.swift */,
 				1ADE36841CFA169400532B46 /* Assets.xcassets */,
 				1ADE36861CFA169400532B46 /* Info.plist */,
+				1AA1F68C1CFDE001005A1277 /* Main.storyboard */,
+				1A4FCB411D011953002A9CBC /* DataModel.xcdatamodeld */,
 			);
 			path = "On The Clock";
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 		944F65BE7ED1EFB4AFFA0C1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A4FCB021D0113B8002A9CBC /* CoreData.framework */,
 				AFCE74E79988421B9AA0C1FC /* Pods_On_The_Clock.framework */,
 				C9AD318657DF9816D29D7C41 /* Pods_On_The_ClockTests.framework */,
 				5BE850828DBC78846C9A7398 /* Pods_On_The_ClockUITests.framework */,
@@ -506,11 +521,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ADE368D1CFA169400532B46 /* PaymentGeneratorModel.swift in Sources */,
+				1A4FCB431D011953002A9CBC /* DataModel.xcdatamodeld in Sources */,
 				1ADAD1331CFF553F007DF28C /* AddJobViewController.swift in Sources */,
 				1ADE36891CFA169400532B46 /* AppDelegate.swift in Sources */,
 				1AA1F6931CFDFB86005A1277 /* JobTableViewCellViewModel.swift in Sources */,
+				1AC79A031D032ECC008C921C /* Jobs.swift in Sources */,
 				1ADE36901CFA243D00532B46 /* StopWatchModel.swift in Sources */,
-				1A4FCB011D00D1A2002A9CBC /* JobDataModel.xcdatamodeld in Sources */,
 				1A2A79481CFCA5FB00713C18 /* HourlyTableView.swift in Sources */,
 				1AA1F69C1CFE140D005A1277 /* JobTableViewCell.swift in Sources */,
 				1AA1F68F1CFDE597005A1277 /* JobModel.swift in Sources */,
@@ -760,13 +776,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1A4FCAFF1D00D1A2002A9CBC /* JobDataModel.xcdatamodeld */ = {
+		1A4FCB411D011953002A9CBC /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1A4FCB001D00D1A2002A9CBC /* JobDataModel.xcdatamodel */,
+				1A4FCB421D011953002A9CBC /* DataModel.xcdatamodel */,
 			);
-			currentVersion = 1A4FCB001D00D1A2002A9CBC /* JobDataModel.xcdatamodel */;
-			path = JobDataModel.xcdatamodeld;
+			currentVersion = 1A4FCB421D011953002A9CBC /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

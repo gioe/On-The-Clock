@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class AddJobViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
 
@@ -70,9 +71,28 @@ class AddJobViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
 
     
     @IBAction func doneButtonPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        saveJobWithCompletion(companyTextField.text!, hourlyRate: hourlyRateTextField.text!) {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+
     }
     
+    func saveJobWithCompletion(companyName:String, hourlyRate: String, completion:() -> Void){
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        let entity =  NSEntityDescription.entityForName("Job", inManagedObjectContext:managedContext)
+        let job = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        job.setValue(companyName, forKey: "companyName")
+        job.setValue(hourlyRate, forKey: "hourlyRate")
+        do {
+            try managedContext.save()
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+        completion()
+    }
+
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool{
         switch textField {
         case companyTextField:
