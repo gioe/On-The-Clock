@@ -9,7 +9,7 @@
 import Foundation
 import ReactiveCocoa
 
-class IntroViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class IntroViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DataPassDelegate {
     
     @IBOutlet weak var jobTable: UITableView!
     private var allJobs = [JobModel]?()
@@ -19,28 +19,41 @@ class IntroViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         registerNibsForCells()
         registerDelegates()
+        fetchJobs()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let secondViewController = (segue.destinationViewController as!  AddJobViewController)
+        secondViewController.delegate = self
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        allJobs = jobManager.fetchAllJobs()
-        if allJobs!.count == 0{
-            self.jobTable.hidden = true
-        }
-        self.jobTable.reloadData()
         
     }
     
     func registerNibsForCells(){
         let nib = UINib(nibName: "JobTableViewCell", bundle: nil)
-        
         self.jobTable.registerNib(nib, forCellReuseIdentifier: "customCell")
     }
     
     func registerDelegates(){
         self.jobTable.delegate = self
         self.jobTable.dataSource = self
+        
 
+    }
+    
+    func fetchJobs(){
+        allJobs = jobManager.fetchAllJobs()
+        if allJobs!.count == 0{
+            self.jobTable.hidden = true
+        }
+    }
+    
+    func passSavedJob(job : JobModel){
+        allJobs?.append(job)
+        jobTable.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

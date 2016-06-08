@@ -10,8 +10,13 @@ import Foundation
 import UIKit
 import CoreData
 
+protocol DataPassDelegate {
+    func passSavedJob(job : JobModel)
+}
+
 class AddJobViewController: UIViewController, UITextFieldDelegate, UIScrollViewDelegate {
 
+    var delegate: DataPassDelegate!
     @IBOutlet weak var hourlyRateTextField: UITextField!
     @IBOutlet weak var companyTextField: UITextField!
     @IBOutlet weak var mainScrollView: UIScrollView!
@@ -68,23 +73,29 @@ class AddJobViewController: UIViewController, UITextFieldDelegate, UIScrollViewD
             mainScrollView.contentInset.bottom = -adjustmentHeight
         }
     }
-
+    
     
     @IBAction func doneButtonPressed(sender: AnyObject) {
         
-        saveJobWithCompletion(companyTextField.text!, hourlyRate: hourlyRateTextField.text!) {
+        let jobToSave = JobModel(companyName: companyTextField.text!, hourlyRate: hourlyRateTextField.text!, companyLogo: nil, lastSubmissionDate: nil)
+        saveJobWithCompletion(jobToSave) {
+            
+            if let delegate = self.delegate {
+                delegate.passSavedJob(jobToSave)
+            }
+            
             self.dismissViewControllerAnimated(true, completion: nil)
         }
 
     }
     
-    func saveJobWithCompletion(companyName:String, hourlyRate: String, completion:() -> Void){
+    func saveJobWithCompletion(jobToSave : JobModel, completion:() -> Void){
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         let entity =  NSEntityDescription.entityForName("Job", inManagedObjectContext:managedContext)
         let job = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
-        job.setValue(companyName, forKey: "companyName")
-        job.setValue(hourlyRate, forKey: "hourlyRate")
+        job.setValue(jobToSave.companyName, forKey: "companyName")
+        job.setValue(jobToSave.hourlyRate, forKey: "hourlyRate")
         do {
             try managedContext.save()
         } catch let error as NSError  {
