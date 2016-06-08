@@ -40,7 +40,6 @@ class IntroViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func registerDelegates(){
         self.jobTable.delegate = self
         self.jobTable.dataSource = self
-        
 
     }
     
@@ -52,6 +51,7 @@ class IntroViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func passSavedJob(job : JobModel){
+        self.jobTable.hidden = false
         allJobs?.append(job)
         jobTable.reloadData()
     }
